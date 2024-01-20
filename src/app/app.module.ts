@@ -18,21 +18,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { UserRegistrationFormComponent } from './user-registration-form/user-registration-form.component';
-import { UserLoginFormComponent } from './user-login-form/user-login-form.component';
-import { MovieCardComponent } from './movie-card/movie-card.component';
-import { WelcomePageComponent } from './welcome-page/welcome-page.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { DirectorComponent } from './director/director.component';
-import { GenreComponent } from './genre/genre.component';
-import { MovieInfoComponent } from './movie-info/movie-info.component';
-import { ProfileEditComponent } from './profile-edit/profile-edit.component';
 import { MainViewComponent } from './main-view/main-view.component';
 
 const appRoutes: Routes = [
-  { path: 'welcome', component: WelcomePageComponent  },
-  { path: 'movies' , component: MovieCardComponent },
-  { path: 'user-profile' , component: UserProfileComponent },
   { path: 'main-view' , component: MainViewComponent },
   { path: '', redirectTo: 'main-view', pathMatch: 'prefix' }
 ]
@@ -40,15 +28,6 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    UserRegistrationFormComponent,
-    UserLoginFormComponent,
-    WelcomePageComponent,
-    MovieCardComponent,
-    UserProfileComponent,
-    DirectorComponent,
-    GenreComponent,
-    MovieInfoComponent,
-    ProfileEditComponent,
     MainViewComponent,
   ],
   imports: [
