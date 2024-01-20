@@ -27,12 +27,14 @@ import { DirectorComponent } from './director/director.component';
 import { GenreComponent } from './genre/genre.component';
 import { MovieInfoComponent } from './movie-info/movie-info.component';
 import { ProfileEditComponent } from './profile-edit/profile-edit.component';
+import { MainViewComponent } from './main-view/main-view.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent  },
   { path: 'movies' , component: MovieCardComponent },
   { path: 'user-profile' , component: UserProfileComponent },
-  { path: '', redirectTo: 'welcome', pathMatch: 'prefix' }
+  { path: 'main-view' , component: MainViewComponent },
+  { path: '', redirectTo: 'main-view', pathMatch: 'prefix' }
 ]
 
 @NgModule({
@@ -47,6 +49,7 @@ const appRoutes: Routes = [
     GenreComponent,
     MovieInfoComponent,
     ProfileEditComponent,
+    MainViewComponent,
   ],
   imports: [
     BrowserModule,
