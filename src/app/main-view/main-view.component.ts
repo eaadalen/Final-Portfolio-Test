@@ -23,10 +23,6 @@ export class MainViewComponent {
     console.log("here");
   }
 
-  goToProjects(): void {
-    this.router.navigate(['main-view']);
-  }
-
   goToContact(): void {
     this.router.navigate(['contact']);
   }
