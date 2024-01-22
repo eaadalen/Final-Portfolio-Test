@@ -1,75 +1,91 @@
 <!DOCTYPE html>
-<div class="title-box">
-    <h1 class="title">Welcome! I'm Erik</h1>
+<div style="background-image: url('../../assets/images/background-2.jpg');">
+    <div class="navbar">
+        <div class="nav-name">Erik Aadalen</div>
+        <button class="nav-link" (click)="goToHome()">Home</button>
+        <button class="nav-link" (click)="goToContact()">Contact</button>
+        <button class="nav-link" (click)="goToProjects()">Work</button>
+        <button class="nav-link" (click)="goToAbout()">About</button>
+    </div>
+    <div class="container" style="display: flex;">
+        <div class="project-tiles">
+            <h2>PokeDex App</h2>
+            <!--<img src="../../assets/videos/pokedex.gif"  width="90%"/>-->
+            <img src="../../assets/images/rest-movie.png"  width="90%"/>
+            <br>
+            <p class="project-description">
+                This app provides the user with a database of every Pokemon. When a user clicks on
+                a pokemon in the database, they are shown a modal with an image of the Pokemon as 
+                well as its height.
+            </p>
+            <a target="_blank" href="{{PokeDex}}" class="tile-links">PokeDex</a>
+            <a target="_blank" href="{{PokeDexGithub}}" class="tile-links">Github Link</a>
+        </div>
+        <div class="project-tiles">
+            <h2>REST Movie API</h2>
+            <img src="../../assets/images/rest-movie.png"  width="90%"/>
+            <br>
+            <p class="project-description">
+                This API contains the setup for the backend of a movie database. It will respond to
+                various user requests (GET movies, POST new user, etc.) with the appropriate data.
+            </p>
+            <a target="_blank" href="{{RESTMovieAPI}}" class="tile-links">RESTMovieAPI</a>
+            <a target="_blank" href="{{RESTMovieAPIGithub}}" class="tile-links">Github Link</a>
+        </div>
+        <div class="project-tiles">
+            <h2>myFlix Movie App (React Version)</h2>
+            <!--<img src="../../assets/videos/react.gif"  width="90%"/>-->
+            <img src="../../assets/images/rest-movie.png"  width="90%"/>
+            <br>
+            <p class="project-description">
+                This project contains the frontend setup to be used in tandem with the backend setup
+                created in the "RESTMovieAPI" project, created using React. 
+            </p>
+            <a target="_blank" href="{{ReactMovieAPI}}" class="tile-links">ReactMovieAPI</a>
+            <a target="_blank" href="{{ReactMovieAPIGithub}}" class="tile-links">Github Link</a>
+        </div>
+        <div class="project-tiles">
+            <h2>myFlix Movie App (Angular Version)</h2>
+            <!--<img src="../../assets/videos/angular.gif"  width="90%"/>-->
+            <img src="../../assets/images/rest-movie.png"  width="90%"/>
+            <br>
+            <p class="project-description">
+                This project contains the frontend setup to be used in tandem with the backend setup
+                created in the "RESTMovieAPI" project, created using Angular. 
+            </p>
+            <a target="_blank" href="{{AngularMovieAPI}}" class="tile-links">AngularMovieAPI</a>
+            <a target="_blank" href="{{AngularMovieAPIGithub}}" class="tile-links">Github Link</a>
+        </div>
+        <div class="project-tiles">
+            <h2>Coding Events App</h2>
+            <!--<img src="../../assets/videos/coding-events.gif"  width="90%"/>-->
+            <img src="../../assets/images/rest-movie.png"  width="90%"/>
+            <br>
+            <p class="project-description">
+                This app connects the user to a vast list of coding events, using the Google Calendar
+                API. The user is able to filter by event language type, distance, and number of search
+                results to match them with the best event for their interests. 
+            </p>
+            <a target="_blank" href="{{CodingEventsApp}}" class="tile-links">CodingEventsApp</a>
+            <a target="_blank" href="{{CodingEventsAppGithub}}" class="tile-links">Github Link</a>
+        </div>
+        <div class="project-tiles">
+            <h2>ChatApp</h2>
+            <!--<img src="../../assets/videos/pokedex.gif"  width="90%"/>-->
+            <img src="../../assets/images/rest-movie.png"  width="90%"/>
+            <br>
+            <p class="project-description">
+                This app utilizes GiftedChat to allow users to exchange texts, images, and map
+                locations. The messages are stored using Google Firebase.
+            </p>
+            <a target="_blank" href="{{ChatApp}}" class="tile-links">ChatApp</a>
+            <a target="_blank" href="{{ChatAppGithub}}" class="tile-links">Github Link</a>
+        </div>
+    </div>
+    <h4>Contact Details</h4>
+    <ul>
+        <li>Email: eaadalen112&#64;gmail.com</li>
+        <li><a target="_blank" href="https://github.com/eaadalen">Github</a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/erik-aadalen-415909168/">LinkedIn</a></li>
+    </ul>
 </div>
-<div class="container" style="display: flex;">
-    <div class="project-tiles">
-        <img src="assets/images/pokedex.png" class="screenshots"/>
-        <br>
-        <p class="project-description">
-            This app provides the user with a database of every Pokemon. When a user clicks on
-            a pokemon in the database, they are shown a modal with an image of the Pokemon as 
-            well as its height.
-        </p>
-        <a target="_blank" href="{{PokeDex}}" class="tile-links">PokeDex</a>
-        <a target="_blank" href="{{PokeDexGithub}}" class="tile-links">Github Link</a>
-    </div>
-    <div class="project-tiles">
-        <img src="assets/images/rest-movie.png" class="screenshots"/>
-        <br>
-        <p class="project-description">
-            This API contains the setup for the backend of a movie database. It will respond to
-            various user requests (GET movies, POST new user, etc.) with the appropriate data.
-        </p>
-        <a target="_blank" href="{{RESTMovieAPI}}" class="tile-links">RESTMovieAPI</a>
-        <a target="_blank" href="{{RESTMovieAPIGithub}}" class="tile-links">Github Link</a>
-    </div>
-    <div class="project-tiles">
-        <img src="assets/images/react-movie.png" class="screenshots"/>
-        <br>
-        <p class="project-description">
-            This project contains the frontend setup to be used in tandem with the backend setup
-            created in the "RESTMovieAPI" project, created using React. 
-        </p>
-        <a target="_blank" href="{{ReactMovieAPI}}" class="tile-links">ReactMovieAPI</a>
-        <a target="_blank" href="{{ReactMovieAPIGithub}}" class="tile-links">Github Link</a>
-    </div>
-    <div class="project-tiles">
-        <img src="assets/images/angular-movie.png" class="screenshots"/>
-        <br>
-        <p class="project-description">
-            This project contains the frontend setup to be used in tandem with the backend setup
-            created in the "RESTMovieAPI" project, created using Angular. 
-        </p>
-        <a target="_blank" href="{{AngularMovieAPI}}" class="tile-links">AngularMovieAPI</a>
-        <a target="_blank" href="{{AngularMovieAPIGithub}}" class="tile-links">Github Link</a>
-    </div>
-    <div class="project-tiles">
-        <img src="assets/images/meet-app.png" class="screenshots"/>
-        <br>
-        <p class="project-description">
-            This app connects the user to a vast list of coding events, using the Google Calendar
-            API. The user is able to filter by event language type, distance, and number of search
-            results to match them with the best event for their interests. 
-        </p>
-        <a target="_blank" href="{{CodingEventsApp}}" class="tile-links">CodingEventsApp</a>
-        <a target="_blank" href="{{CodingEventsAppGithub}}" class="tile-links">Github Link</a>
-    </div>
-    <div class="project-tiles">
-        <img src="assets/images/react-native.png" class="screenshots"/>
-        <br>
-        <p class="project-description">
-            This app utilizes GiftedChat to allow users to exchange texts, images, and map
-            locations. The messages are stored using Google Firebase.
-        </p>
-        <a target="_blank" href="{{ChatApp}}" class="tile-links">ChatApp</a>
-        <a target="_blank" href="{{ChatAppGithub}}" class="tile-links">Github Link</a>
-    </div>
-</div>
-
-<h4>Contact Details</h4>
-<ul>
-    <li>Email: eaadalen112&#64;gmail.com</li>
-    <li><a target="_blank" href="https://github.com/eaadalen">Github</a></li>
-    <li><a target="_blank" href="https://www.linkedin.com/in/erik-aadalen-415909168/">LinkedIn</a></li>
-</ul>

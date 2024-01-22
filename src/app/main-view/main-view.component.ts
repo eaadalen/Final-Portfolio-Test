@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ToDoListComponent } from '../to-do-list/to-do-list.component';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,6 +8,29 @@ import { Router } from '@angular/router';
 })
 
 export class MainViewComponent {
+
+  constructor(
+    private router: Router
+  ) { }
+
+  goToHome(): void {
+    this.router.navigate(['welcome']);
+    console.log("here");
+  }
+
+  goToAbout(): void {
+    this.router.navigate(['about']);
+    console.log("here");
+  }
+
+  goToProjects(): void {
+    this.router.navigate(['main-view']);
+  }
+
+  goToContact(): void {
+    this.router.navigate(['contact']);
+  }
+
   ToDoList = 'https://eaadalen.github.io/to-do-list-app/';
   PokeDex = 'https://eaadalen.github.io/simple-js-app/#';
   RESTMovieAPI = 'https://desolate-everglades-87695-c2e8310ae46d.herokuapp.com/';
