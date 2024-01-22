@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ToDoListComponent } from '../to-do-list/to-do-list.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-view',
@@ -7,7 +9,6 @@ import { Component } from '@angular/core';
 })
 
 export class MainViewComponent {
-
   ToDoList = 'https://eaadalen.github.io/to-do-list-app/';
   PokeDex = 'https://eaadalen.github.io/simple-js-app/#';
   RESTMovieAPI = 'https://desolate-everglades-87695-c2e8310ae46d.herokuapp.com/';
