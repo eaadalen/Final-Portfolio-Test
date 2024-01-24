@@ -1,1 +1,40 @@
-<p>contact works!</p>
+<!DOCTYPE html>
+<div class="overall-container">
+    <div class="navbar">
+        <div class="nav-name">Erik Aadalen</div>
+        <button class="nav-link" (click)="goToWork()">Work</button>
+        <button class="nav-link" (click)="goToAbout()">About</button>
+        <button class="nav-link" (click)="goToHome()">Home</button>
+    </div>
+    <div class="contact-form">
+        <h1>Contact</h1>
+        <form method="post">
+          <div class="form-item">
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              style="font-family: inherit"
+              required
+            >
+          </div>
+          <div class="form-item">
+            <textarea
+              class="form-input"
+              maxlength="240"
+              name="message"
+              id="message"
+              placeholder="Your message"
+              style="font-family: inherit"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div><button type="submit" class="button" (click)="sendMessage()">Send message</button></div>
+          <input type="hidden" name="-captcha" value="false">
+          <input type="hidden" name="-next" value="">
+        </form>
+      </div>
+</div>
